@@ -1,0 +1,8 @@
+.btn-toggle::after {
+      content: "▸";
+      float: right;
+      transition: transform 0.3s;
+    }
+    .btn-toggle.open::after {
+      transform: rotate(90deg);
+    }

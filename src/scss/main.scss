@@ -1,0 +1,45 @@
+@import 'variables';
+@import 'bootstrap';
+
+// Main styles
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+// Header styles
+header {
+    background: $primary-color;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+// main
+main {
+  min-height: 750px;
+}
+// Footer styles
+footer {
+    background: $secondary-color;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+@import "../node_modules/bootstrap/scss/functions";
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";

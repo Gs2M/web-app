@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header Component -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main class="flex-grow-1 py-5">
+        <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <h1 class="text-center mb-4">Contact Us</h1>
+                <form>
+                    <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    />
+                    </div>
+
+                    <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    />
+                    </div>
+
+                    <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea
+                        class="form-control"
+                        id="message"
+                        rows="4"
+                        placeholder="Your message"
+                        required
+                    ></textarea>
+                    </div>
+
+                    <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Footer Component -->
+    <div id="footer"></div>
+
+  <!-- Local JS files -->
+  <script src="../js/main.js"></script>
+
+  <!-- Load header and footer dynamically -->
+  <script>
+    $(function () {
+      $("#header-placeholder").load("../components/header.html");
+      $("#footer-placeholder").load("../components/footer.html");
+    });
+  </script>
+</body>
+</html>

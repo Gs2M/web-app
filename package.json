@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "express": "^5.1.0",
+    "jquery": "^3.7.1"
+  },
+  "name": "24c2-qtm-web",
+  "version": "1.0.0",
+  "description": "## Overview This project is a web application built using HTML, CSS, Bootstrap, and jQuery. It serves as a template for creating responsive and interactive web pages.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

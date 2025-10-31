@@ -1,0 +1,85 @@
+@import url('../scss/main.scss');
+@import url('../css/bootstrap.min.css');
+@import url('../css/sidebar.css');
+@import url('../scss/variables');
+@import url('../scss/variables-dark');
+@import url('../scss/mixins');
+@import url('../scss/maps');
+@import url('../scss/root');
+@import url('../scss/utilities');
+@import url('../scss/reboot');
+@import url('../scss/containers');
+@import url('../scss/grid');
+@import url('../scss/helpers');
+@import url('../scss/utilities/api');
+@import url('../scss/components/alerts');
+@import url('../scss/components/buttons');
+@import url('../scss/components/cards');
+@import url('../scss/components/navbar');
+@import url('../scss/components/forms');
+@import url('../scss/components/modals');
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+main {
+  flex: 1;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
