@@ -1,0 +1,24 @@
+{
+  "menuItems": [
+    {
+      "title": "Danh Mục Sản Phẩm",
+      "links": [
+        { "text": "Nội thất sofa phòng khách", "url": "#" },
+        { "text": "Nội thất phòng ngủ", "url": "#" }
+      ]
+    },
+    {
+      "title": "Thống Kê Truy Cập",
+      "links": [
+        { "text": "Lượt xem hôm nay", "url": "#" }
+      ]
+    },
+    {
+      "title": "Quảng Cáo",
+      "links": [
+        { "text": "Banner", "url": "#" },
+        { "text": "Video", "url": "#" }
+      ]
+    }
+  ]
+}

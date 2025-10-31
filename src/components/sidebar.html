@@ -1,20 +1,21 @@
-<div class="b-example-divider b-example-vr"></div>
-<div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
-    <ul class="list-unstyled ps-0">
-      <li class="mb-1">
-        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 fw-bold" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#home-collapse" 
-          aria-expanded="true">
-          Home
-        </button>
-        <div class="collapse show ps-4" id="home-collapse">
-          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-dark rounded">Overview</a></li>
-            <li><a href="#" class="link-dark rounded">Updates</a></li>
-            <li><a href="#" class="link-dark rounded">Reports</a></li>
-          </ul>
-        </div>
-      </li>
-    </ul>
+<nav id="main-navbar" class="navbar navbar-expand-lg bg-white fixed-top w-250">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">
+      <img class="w-200" src="/pub/images/logo.jpg" height="25" alt="MDB Logo" loading="lazy" />
+    </a>
   </div>
+  <!-- Container wrapper -->
+</nav>
+<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white h-100 w-250">
+  <div class="position-sticky">
+    <div id="sidebar-content" class="list-group list-group-flush mx-3">
+    </div>
+    <div id="sidebar-access" class="list-group list-group-flush mx-3">
+    </div>
+    <div id="sidebar-adv" class="list-group list-group-flush mx-3">
+    </div>
+  </div>
+</nav>

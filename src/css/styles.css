@@ -36,7 +36,7 @@ header {
     text-align: center;
 }
 main {
-  flex: 1;
+  height: 100%;
 }
 footer {
     background: #333;
@@ -82,4 +82,33 @@ a:hover {
 
 .btn-primary:hover {
     background: #0056b3;
+}
+
+.w-250 {
+    width: 15%;
+    min-width: 250px;
+}
+
+.link-row {
+  display: flex;
+  justify-content: space-between; /* left + right */
+  margin: 0;
+  padding: 0;
+}
+.link-row p {
+  margin: 0;
+}
+.small-text {
+  font-size: 0.875em;
+}
+
+.tiny-text {
+  font-size: 0.675em;
+}
+.w-200 {
+  width: 200px !important;
+}
+.display-img {
+    max-width: 1200px;
+    height: 400px;
 }

@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Bootstrap jQuery App</title>
+    <title>Nội Thất Bảo Ngọc</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Header Component -->
     <div id="header"></div>
-    <div id="menu"></div>
-    <main class="flex-grow-1 py-5">
-        <div class="container">
-            <h1>Welcome to the HTML5 Bootstrap jQuery App</h1>
-            <p>This is the main page of the application.</p>
-        </div>
-        </div>
-    </main>
+    <div class="d-flex flex-fill">
+        <div id="menu" class="flex-shrink-0 bg-light w-250"></div>
+        <main class="flex-grow-1 py-5">
+             <div class="container">
+                <img class="display-img w-100" src="/pub/images/slide7_713_384.jpg"/>
+             </div>
+            <section>
+              <div id="products-container" class="text-center container py-5 d-flex flex-wrap gap-2">
+              </div>
+            </section>
+        </main>
+    </div>
+    
     <!-- Footer Component -->
     <div id="footer"></div>
 
     <script src="js/main.js"></script>
-    <script src="js/plugins.js"></script>
+     <script type="module" src="js/product-loadding.js"></script>
+    <script type="module" src="js/plugins.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

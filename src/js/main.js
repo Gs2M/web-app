@@ -4,7 +4,7 @@
     const components = [
         { id: "header", path: baseUrl + "components/header.html" },
         { id: "footer", path: baseUrl + "components/footer.html" },
-        { id: "menu", path: baseUrl + "components/sidebar.html" }
+        { id: "menu", path: baseUrl + "components/sidebar.html" },
     ];
 
     function insertHTML(id, html) {
