@@ -8,6 +8,9 @@ const port = 3000;
 app.use(express.static(path.join(__dirname, "src")));
 app.use("/css", express.static(path.join(__dirname, "node_modules/bootstrap/dist/css")));
 app.use("/js", express.static(path.join(__dirname, "node_modules/bootstrap/dist/js")));
+app.use("/scss", express.static(path.join(__dirname, "node_modules/bootstrap/scss")));
+app.use("/font", express.static(path.join(__dirname, "node_modules/bootstrap-icons/font")));
+app.use("/icons", express.static(path.join(__dirname, "node_modules/bootstrap-icons/icons")));
 
 app.use("/pub", express.static(path.join(__dirname, "public")));
 

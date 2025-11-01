@@ -1,23 +1,8 @@
-@import url('../scss/main.scss');
+@import url('../font/bootstrap-icons.css');
 @import url('../css/bootstrap.min.css');
 @import url('../css/sidebar.css');
-@import url('../scss/variables');
-@import url('../scss/variables-dark');
-@import url('../scss/mixins');
-@import url('../scss/maps');
-@import url('../scss/root');
-@import url('../scss/utilities');
-@import url('../scss/reboot');
-@import url('../scss/containers');
-@import url('../scss/grid');
-@import url('../scss/helpers');
-@import url('../scss/utilities/api');
-@import url('../scss/components/alerts');
-@import url('../scss/components/buttons');
-@import url('../scss/components/cards');
-@import url('../scss/components/navbar');
-@import url('../scss/components/forms');
-@import url('../scss/components/modals');
+
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
