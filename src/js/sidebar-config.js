@@ -18,12 +18,12 @@ export const accessCountConfig = [
     {
         title: "Thống Kê Truy Cập",
         items: [
-            { text: "Hôm nay", value: "3" },
-            { text: "Hôm qua", value: "3" },
-            { text: "Tuần này", value: "235" },
-            { text: "Tuần trước", value: "303" },
-            { text: "Tháng này", value: "479" },
-            { text: "Tháng trước", value: "1110" },
+            { text: "Hôm nay", value: "3", icon: "/pub/images/icon-today.png" },
+            { text: "Hôm qua", value: "3", icon: "/pub/images/icon-yesterday.png" },
+            { text: "Tuần này", value: "235", icon: "/pub/images/icon-week.png" },
+            { text: "Tuần trước", value: "303", icon: "/pub/images/icon-last-week.png" },
+            { text: "Tháng này", value: "479", icon: "/pub/images/icon-month.png" },
+            { text: "Tháng trước", value: "1110", icon: "/pub/images/icon-last-month.png" },
         ]
     }
 ];

@@ -67,7 +67,9 @@ onSidebarLoaded(function () {
       ${item.items.map(link => `
         <li class="list-group-item py-1 tiny-text">
             <div class="link-row">
+                <img src="${link.icon}">
                 <p>${link.text}</p>
+                
                 <p>${link.value}</p>
             </div>
         </li>
