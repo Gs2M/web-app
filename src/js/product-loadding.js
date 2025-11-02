@@ -24,7 +24,7 @@ onLoaded(function () {
   const productsContainer = document.getElementById("products-container");
   productsContainer.innerHTML += products.map(product => `
     <div class="col-lg-4 col-md-12 mb-4" style="width: 32%;">
-      <div class="card" style="max-height: 500px;">
+      <div class="card" style="max-height: 600px;">
       <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
           data-mdb-ripple-color="light">
           <img src="${product.image}" class="w-100" style="height: 250px;"/>
@@ -48,9 +48,15 @@ onLoaded(function () {
           <h5 class="card-title mb-3">${product.name}</h5>
           </a>
           <a href="" class="text-reset">
-          <p>${product.category}</p>
+            <p>${product.category}</p>
           </a>
-          <h6 class="mb-3">${product.price} ${product.currency}</h6>
+          <h6 class="mb-3">${product.price} ${product.currency}</h6> 
+          <button class="btn btn-light border-0 shadow-sm px-3 py-2 cart-btn">
+            <div class="d-flex align-items-center justify-content-center">
+              <i class="bi bi-cart-fill fs-4 text-dark"></i>
+              <span class="cart-text ms-2">Buy</span>
+            </div>
+          </button>
       </div>
       </div>
     </div>
