@@ -87,7 +87,8 @@ function totalPurchased() {
 function totalItemPurchased() {
     const totalItems = productService.purchasedProducts(productService.userDefault.userId)
         .reduce((sum, item) => sum + item.quantity, 0);
-    document.getElementById('item-purchased').textContent = `${totalItems} items`;
+    document.getElementById('item-purchased-first').textContent = `${totalItems} items`;
+    document.getElementById('item-purchased-second').textContent = `${totalItems} items`;
 }
 
 function addEventListenerToChangeQuantity() {
