@@ -83,6 +83,19 @@ a:hover {
 .link-row p {
   margin: 0;
 }
+
+.link-row div img {
+  width: 10%;
+}
+.link-row div {
+  display: flex;
+  justify-content: space-between; /* left + right */
+  width: 90%;
+}
+.link-row div p {
+  margin-top: 0.2rem;
+}
+
 .small-text {
   font-size: 0.875em;
 }
