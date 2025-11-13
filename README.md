@@ -113,7 +113,7 @@ docker compose -f docker-compose.yml down
 Ví dụ dùng `buildcake.ps1`:
 ```powershell
 # build + run non-interactive
-.\buildcake.ps1 -ImageName "gs2m/web-app:latest" -Port 3000
+.\buildcake.ps1 -ImageName "web-app:latest" -Port 3000
 
 # interactive: bạn sẽ được hỏi trước mỗi bước (build/push/run)
 .\buildcake.ps1 -Interactive

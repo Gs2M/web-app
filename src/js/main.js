@@ -19,6 +19,19 @@
             return resp.text();
         })
         .then(html => insertHTML(id, html))
+        .then(() => {
+            // If header was just loaded, call its initializer module
+            if (id === 'header') {
+                // dynamic import from the served path
+                import('/js/header-init.js')
+                    .then(mod => {
+                        if (mod && typeof mod.initHeader === 'function') {
+                            mod.initHeader();
+                        }
+                    })
+                    .catch(err => console.error('Failed to init header:', err));
+            }
+        })
         .catch(err => console.error(`Error loading ${path}:`, err));
     }
 
@@ -53,3 +66,4 @@ document.addEventListener('DOMContentLoaded', function () {
       sidebar.classList.toggle('expanded');
     });
   });
+

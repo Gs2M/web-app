@@ -1,10 +1,14 @@
 import { products } from "./product-config.js";
+import productService from "./product-service.js";
+import currency from "./currency.js";
 
 function onLoaded(callback, id) {
   // If already exists → trigger immediately
   const existing = document.getElementById(id);
   if (existing) {
     callback(existing);
+    productService.addEventListenerToBuyButtons();
+    productService.loadPurchasedProducts();
     return;
   }
 
@@ -43,20 +47,21 @@ onLoaded(function () {
           </div>
           </a>
       </div>
-      <div class="card-body">
+      <div id=product-${product.id} class="card-body">
           <a href="" class="text-reset">
           <h5 class="card-title mb-3">${product.name}</h5>
           </a>
           <a href="" class="text-reset">
             <p>${product.category}</p>
           </a>
-          <h6 class="mb-3">${product.price} ${product.currency}</h6> 
-          <button class="btn btn-light border-0 shadow-sm px-3 py-2 cart-btn">
+          <h6 class="mb-3">${currency.format(product.price, null)} ${product.currency}</h6> 
+          <button id=${product.id} class="btn btn-light border-0 shadow-sm px-3 py-2 cart-btn cart-btn-action">
             <div class="d-flex align-items-center justify-content-center">
               <i class="bi bi-cart-fill fs-4 text-dark"></i>
               <span class="cart-text ms-2">Buy</span>
             </div>
           </button>
+          <span id="cart-count-${product.id}" class="translate-middle badge rounded-pill bg-danger"></span>
       </div>
       </div>
     </div>

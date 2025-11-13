@@ -1,5 +1,6 @@
 export const products = [
     {
+        id: 1,
         name: "Sofa Phòng Khách Cao Cấp",
         price: 600000,
         currency: "VND",
@@ -14,6 +15,7 @@ export const products = [
         ]
     },
     {
+        id: 2,
         name: "Bàn Trà Hiện Đại",
         price: 450000,
         currency: "VND",
@@ -28,6 +30,7 @@ export const products = [
         ]
     },
     {
+        id: 3,
         name: "Ghế Thư Giãn",
         price: 750000,
         currency: "VND",
@@ -42,6 +45,7 @@ export const products = [
         ]
     },
     {
+        id: 4,
         name: "Tủ Kệ TV",
         price: 890000,
         currency: "VND",
@@ -56,6 +60,7 @@ export const products = [
         ]
     },
     {
+        id: 5,
         name: "Bộ Bàn Ăn",
         price: 1200000,
         currency: "VND",
@@ -74,6 +79,7 @@ export const products = [
         ]
     },
     {
+        id: 6,
         name: "Giường Ngủ Đôi",
         price: 950000,
         currency: "VND",
@@ -88,6 +94,7 @@ export const products = [
         ]
     },
     {
+        id: 7,
         name: "Tủ Quần Áo",
         price: 850000,
         currency: "VND",
@@ -102,6 +109,7 @@ export const products = [
         ]
     },
     {
+        id: 8,
         name: "Bàn Làm Việc",
         price: 480000,
         currency: "VND",
@@ -116,6 +124,7 @@ export const products = [
         ]
     },
     {
+        id: 9,
         name: "Kệ Sách Đa Năng",
         price: 350000,
         currency: "VND",
@@ -130,6 +139,7 @@ export const products = [
         ]
     },
     {
+        id: 10,
         name: "Đèn Trang Trí",
         price: 250000,
         currency: "VND",
@@ -148,6 +158,7 @@ export const products = [
         ]
     },
     {
+        id: 11,
         name: "Gương Trang Trí",
         price: 420000,
         currency: "VND",
