@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web-app:
+    build: .
+    image: web-app:latest
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: ${NODE_ENV:-development}
+    volumes:
+      - ./:/app:cached # optional for dev
+    command: ${CMD:-node server.js}
